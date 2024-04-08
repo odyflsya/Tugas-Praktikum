@@ -11,7 +11,7 @@ class Dosen extends Model
 
     protected $table = 'dosen';
     protected $primaryKey = 'id_dosen';
-    public $time_stamps = false;
+    
 
     public function matkul()
     {

@@ -12,8 +12,7 @@
               <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Nama</th>
-                <th scope="col">NIP</th>
-              
+                <th scope="col">NIP</th>              
                 <th scope="col">Matkul</th>
                 <th scope="col">Aksi</th>
 
@@ -23,8 +22,8 @@
               @foreach($dosen as $dsn)
               <tr>
                 <th scope="row">{{$dsn->id_dosen}}</th>
-                <td>{{$dsn->nama}}</td>
-                <td>{{$dsn->nip}}</td>                
+                <td>{{$dsn->nama_dosen}}</td>
+                <td>{{$dsn->NIP}}</td>                
                 <td>{{$dsn->matkul->nama_mata_kuliah}}</td>
                 <td>
                     <button type="button" class="btn btn-primary">Update</button>
