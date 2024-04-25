@@ -29,7 +29,11 @@
                 {{-- <td>{{$mhs->ktm->nomor_identitas}}</td> --}}
                 <td>
                     <a href="{{route('edit', $mhs->id_mahasiswa)}}"><button type="button" class="btn btn-primary">Update</button></a>
-                    <button type="button" class="btn btn-danger">Hapus</button>
+                    <form action="{{ route('destroy', $mhs->id_mahasiswa) }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" onclick="return confirm('Apakah Anda yakin ingin menghapus ini?')" class="btn btn-danger">Hapus</button>
+                    </form>
                 </td>
               </tr>
               @endforeach
