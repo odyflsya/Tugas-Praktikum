@@ -11,6 +11,8 @@ class Dosen extends Model
 
     protected $table = 'dosen';
     protected $primaryKey = 'id_dosen';
+    protected $fillable = ['id', 'nama_dosen', 'nip', 'matkul'];
+    public $timestamps = false;
     
 
     public function matkul()

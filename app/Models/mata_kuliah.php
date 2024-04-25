@@ -10,6 +10,7 @@ class mata_kuliah extends Model
     use HasFactory;
     protected $table = 'mata_kuliah';
     protected $primaryKey = 'id_matkul';
+    protected $fillable = ['matkul'];
     public $time_stamps = false;
 
     public function dosen()
